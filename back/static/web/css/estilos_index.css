@@ -1,0 +1,499 @@
+/*
+azul: #0b4895;
+amarillo: #fdc513;
+*/
+
+/*--- tipografía ---*/
+@font-face {
+    font-family:"proxima_nova_semibold";
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	margin: 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+body{
+	background: url(../img/bg-desktop.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	font-size: 16px;
+	font-family: arial;
+}
+
+header{
+	/*background: url(../img/fondo-cabecera.png);
+	background-repeat: no-repeat;
+	background-position: right center;*/
+	background: #0855a0;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA4NTVhMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTdmYzAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #0855a0 0%, #1a7fc0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0855a0), color-stop(100%,#1a7fc0));
+	background: -webkit-linear-gradient(top,  #0855a0 0%,#1a7fc0 100%);
+	background: -o-linear-gradient(top,  #0855a0 0%,#1a7fc0 100%);
+	background: -ms-linear-gradient(top,  #0855a0 0%,#1a7fc0 100%);
+	background: linear-gradient(to bottom,  #0855a0 0%,#1a7fc0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0855a0', endColorstr='#1a7fc0',GradientType=0 );
+
+	margin: 0 auto 16px auto;
+	width: 1200px;
+	min-height: 130px;
+	overflow: hidden;
+}
+
+section{
+	margin: 0 auto 16px auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+article{
+	float: right;
+}
+
+footer{
+	margin: 0 auto 16px auto;
+	width: 1200px;
+}
+
+.logo{
+	float: left;
+	height: 130px;
+	width: 400px;
+}
+
+.logo img{
+	height: 100%;
+	width: 100%;
+}
+
+i.btnMenu{
+	display: none;
+	float: right;
+	padding: 36px 46px 10px 10px;
+	color: #fff;
+	cursor: pointer;
+}
+
+i.btnMenu:hover{
+	color: #fdc513;
+}
+
+nav{
+	float: right;
+	margin: 20px 20px 0 0;
+	z-index: 8000;
+}
+nav ul{
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+nav ul li{
+	float: left;
+	margin: 0.8em;
+	display: block;
+}
+
+nav ul li a{
+	color: white;
+	font-family: "proxima_nova_semibold", arial;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: #fdc513;
+}
+
+.itemMenuPrincipal{
+	text-transform: uppercase;
+}
+
+.itemMenuSecundario{
+	margin-top: 1em;
+	float: right !important;
+}
+
+.fila1{
+	background: #0b4895;
+	width: 25%;
+	padding: 1.5em 1em;
+	border-right: 1em solid white;
+}
+
+.fila2{
+	width: 75%;
+}
+
+.fila1 h2{
+	color: #fdc513;
+	font-family: "proxima_nova_semibold", arial;	
+	font-weight: normal;
+	margin: 0 0 1em 0;
+	text-align: center;
+}
+
+.fila1 i{
+	color: #fdc513;
+}
+
+form{
+	width: 100%;
+	color: white;
+}
+
+.textoForm{
+	font-family: "proxima_nova_semibold", arial;
+	margin: 0.5em 0 1em 0;
+}
+
+.campo, textarea{
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-family: "proxima_nova_semibold", arial;
+	font-size: 1em;
+	border: 1px solid white;
+	margin: 0.5em 0 1em 0;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.campo:focus, textarea:focus{
+	background: #f5f5f5;
+	outline: none;
+}
+
+.boton{
+	background: #1067d4;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-family: "proxima_nova_semibold", arial;
+	font-size: 1em;
+	padding: 0.5em 0;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.fila2 .slideshow{
+	margin: 0 0 16px 0;
+}
+.fila2 .slideshow ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fila1 p, .fila1 ul{
+	color: #fff;
+	font-size: 0.9em;
+	line-height: 120%;
+	margin: 0.9em 0 0.9em 0;
+	padding: 0;
+	text-align: justify;
+}
+
+.fila1 ul{
+	margin: 0.9em 0 0.9em 0.9em !important;
+}
+
+.fila1 li{
+	margin: 0 0 0.9em 0;
+}
+
+.fila1 li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.fila1 li a:visited {
+	color: #fdc513;
+}
+
+aside{
+	border: 1px solid #fdc513;
+	float: left;
+	margin-right: 2.5%;
+	overflow: hidden;
+	width: 30%;
+}
+
+aside:last-child{
+	border: 0;
+	margin: 0 !important;
+	width: 35%;
+	overflow: hidden;
+}
+
+aside img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.bannerAgencias{
+	width: 100%;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+.bannerAgencias img{
+	width: 100%;
+	height: auto;
+}
+
+.enlaceAgencias{
+	background: #0b4895;
+	color: white;
+	display: block;
+	font-size: 1.1em;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+.bannerLibro{
+	background: white;
+	border: 1px solid #0b4895;
+	color: #0b4895;	
+	height: 25%;
+	overflow: hidden;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.bannerLibro img{
+	width: 30%;
+	float: left;
+	margin: 0 10px 0 0;
+	height: auto;
+}
+
+.enlaceLibro{
+	font-size: 1.1em;
+	line-height: 90%;
+	text-decoration: none;
+	color: #0b4895;
+}
+
+.enlaceLibro:hover{
+	text-decoration: underline;
+}
+
+footer ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	padding: 0;
+}
+
+footer li{
+	display: inline-block;
+	margin: 0.25em 0.5em;
+}
+
+footer li a{
+	font-size: 0.75em;
+	color: black;
+	text-decoration: none;
+}
+
+footer li a:hover{
+	color: #0b4895;
+	text-decoration: underline;
+}
+
+footer p{
+	color: #aaa;
+	font-size: 0.75em;
+	padding: 0.75em 0;
+	text-align: center;
+}
+
+
+/* Media Queris */
+
+/* Las cajas ocupan el 100% del viweport */
+@media screen and (max-width: 1200px){
+	header, section, footer{
+		width:100%;
+	}
+}
+
+/* Redimensioamiento de las 2 columnas principales, reduciendo margen de menu, */
+@media screen and (max-width: 1024px){
+	nav ul li{
+		margin: 0.8em 0.5em;
+	}
+	.fila1{
+		width: 30%;
+	}
+	.fila2{
+		width: 70%;
+	}
+	.fila1 h2{
+		margin-bottom: 10px;
+	}
+	.campo, textarea{
+		font-size: 0.9em;
+		margin: 0.25em 0 0.5em 0;
+	}
+	.enlaceAgencias{
+		font-size: 1em;
+	}
+	.bannerLibro{
+		padding: 10px;
+	}
+	.enlaceLibro{
+		line-height: 30px;
+		font-size: 0.8em;
+	}
+}
+
+/* Oculta body background, reduce alto header, reduce logo */
+@media screen and (max-width: 968px){
+	body{
+		background: none;
+	}
+	header{
+		min-height: 114px;
+	}
+	.logo{
+		height: 114px;
+		width: 350px;
+	}
+	nav li{
+		font-size: 0.9em;
+	}
+}
+
+/* Oculta menú desktop, muestra menú móvil,  */
+@media screen and (max-width: 849px){
+	header nav{
+		width: 80%;
+		height: 100%;
+		margin: 0 !important;
+		position: fixed;
+		left: -100%;
+		background: #0b4895;
+	}
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+	header nav ul li{
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		display: block;
+		float: none;
+		margin: 0.75em 1em;
+		padding: 0.8em 0.8em 2em 0;
+	}
+	nav ul li a{
+		padding: 0 75% 0 1em;
+	}
+	i.btnMenu{
+		display: block;
+	}
+	.MenuPrincipal{
+		margin: 0 !important;
+	}
+	.menuSecundario{
+		display: none;
+	}
+	.enlaceLibro{
+		font-size: 0.7em;
+	}
+}
+
+/* Baja la caja del formulario,  */
+@media screen and (max-width: 768px){
+	article{
+		width: 100% !important;
+		float: none;
+	}
+	.fila1{
+		border: none;
+	}
+	.fila2{
+		overflow: hidden;
+		margin-bottom: 1em;
+	}
+	textarea{
+		margin: 0.25em 0 1em 0;
+	}
+	.enlaceLibro{
+		font-size: 0.95em;
+		line-height: 35px;
+	}
+}
+
+/*  Ligero ajuste en enlace Libro de Reclamaciones */
+@media screen and (max-width: 744px){
+	.bannerLibro{
+		padding: 2px;
+	}
+	.enlaceLibro{
+		line-height: 100%;
+	}
+}
+
+/* Reduce aun más header y logo, acomoda los banners cuadrados,  */
+@media screen and (max-width: 480px){
+	header{
+		min-height: 80px;
+	}
+	.logo{
+		height: 80px;
+		width: 246px;
+	}
+	i.btnMenu{
+		padding: 16px 16px 0 16px;
+	}
+	aside{
+		width: 48%;
+		margin: 0 0 16px 0;
+	}
+	.caja1{
+		margin-right: 4% !important;
+	}
+	.caja3{
+		width: 100% !important;
+		overflow: hidden;
+	}
+	.bannerAgencias{
+		width: 48%;
+		float: left;
+		margin-right: 4%;
+	}
+	.bannerLibro{
+		width: 48%;
+		padding: 20px;
+		text-align: center;
+	}
+	.bannerLibro img{
+		width: 100%;
+		margin-bottom: 6%;
+	}
+	.enlaceLibro{
+		display: block;
+	}
+}
+
+form input.error, form select.error, form textarea.error {
+  border: 1px solid #ff0000;
+}
