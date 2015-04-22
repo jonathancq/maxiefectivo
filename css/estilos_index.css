@@ -157,6 +157,11 @@ form{
 }
 
 .campo, textarea{
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	font-family: "proxima_nova_semibold", arial;
 	font-size: 1em;
 	border: 0;
@@ -189,6 +194,32 @@ form{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.fila1 p, .fila1 ul{
+	color: #fff;
+	font-size: 0.9em;
+	line-height: 120%;
+	margin: 0.9em 0 0.9em 0;
+	padding: 0;
+	text-align: justify;
+}
+
+.fila1 ul{
+	margin: 0.9em 0 0.9em 0.9em !important;
+}
+
+.fila1 li{
+	margin: 0 0 0.9em 0;
+}
+
+.fila1 li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.fila1 li a:visited {
+	color: #fdc513;
 }
 
 aside{
