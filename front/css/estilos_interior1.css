@@ -139,7 +139,7 @@ nav ul li a:hover{
 }
 
 .columna1Contenido .texto{
-	/*border: 1px solid red;*/
+	overflow: hidden;
 	width: 100%;
 	height: auto;
 	padding: 2em 1em;
@@ -156,7 +156,13 @@ nav ul li a:hover{
 	margin-top: 1.5em;
 }
 
-.columna1Contenido h1, .columna1Contenido h2, .columna1Contenido p, .columna1Contenido ul, .columna1Contenido li{
+.columna1Contenido h3{
+	color: #0b4895;
+	font-size: 1.75em;
+	margin-top: 2em;
+}
+
+.columna1Contenido h1, .columna1Contenido h2, .columna1Contenido h3, .columna1Contenido p, .columna1Contenido ul, .columna1Contenido li{
 	line-height: 120%;
 	margin-bottom: 0.75em;
 }
@@ -169,6 +175,47 @@ nav ul li a:hover{
 	padding-bottom: 1em;
 	overflow: hidden;
 	border-bottom: 1px solid #ddd;
+}
+
+.cajaPromo{
+	border: 1px solid #ddd;
+	width: 49%;
+	float: left;
+	height: auto;
+	padding: 1em;
+	margin: 0 2% 4% 0;
+	overflow: hidden;
+	position: relative;
+	/*max-height: 336px;*/
+}
+
+.cajaPromo:nth-child(2n+1){
+	margin: 0 0 4% 0;
+}
+
+.cajaPromo a{
+	color: #0b4895;
+	text-decoration: none;
+}
+
+.cajaPromo h2{
+	margin: 0.5em 0 !important;
+}
+
+.cajaPromo p{
+	margin: 0 !important;
+}
+
+.fechaPromo{
+	font-weight: normal;
+	background: #0b4895;
+	color: #fff;
+	font-size: 0.7em;
+	padding: 1em;
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	border-radius: 50%
 }
 
 aside{
@@ -331,6 +378,10 @@ footer p{
 	}
 	span{
 		font-size: 1.3em;
+	}
+	.cajaPromo{
+		width: 100%;
+		margin: 0 0 4% 0;
 	}
 }
 

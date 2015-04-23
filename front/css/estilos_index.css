@@ -218,10 +218,6 @@ form{
 	text-decoration: none;
 }
 
-.fila1 li a:visited {
-	color: #fdc513;
-}
-
 aside{
 	border: 1px solid #fdc513;
 	float: left;
