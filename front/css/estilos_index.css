@@ -252,42 +252,22 @@ aside img{
 
 .enlaceAgencias{
 	background: #0b4895;
-	color: white;
+	color: #fff;
 	display: block;
 	font-size: 1.1em;
 	padding: 10px 0;
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
+	-webkit-transition: color 0.2s;
+    transition: color 0.2s;
 }
 
-.bannerLibro{
-	background: white;
-	border: 1px solid #0b4895;
-	color: #0b4895;	
-	height: 25%;
-	overflow: hidden;
-	padding: 10px 20px;
-	width: 100%;
+.enlaceAgencias:hover{
+	color: #fdc513;
 }
 
-.bannerLibro img{
-	width: 30%;
-	float: left;
-	margin: 0 10px 0 0;
-	height: auto;
-}
 
-.enlaceLibro{
-	font-size: 1.1em;
-	line-height: 90%;
-	text-decoration: none;
-	color: #0b4895;
-}
-
-.enlaceLibro:hover{
-	text-decoration: underline;
-}
 
 footer ul{
 	list-style: none;
@@ -324,6 +304,7 @@ footer p{
 
 /* Media Queris */
 
+
 /* Las cajas ocupan el 100% del viweport */
 @media screen and (max-width: 1200px){
 	header, section, footer{
@@ -351,13 +332,6 @@ footer p{
 	}
 	.enlaceAgencias{
 		font-size: 1em;
-	}
-	.bannerLibro{
-		padding: 10px;
-	}
-	.enlaceLibro{
-		line-height: 30px;
-		font-size: 0.8em;
 	}
 }
 
@@ -411,9 +385,6 @@ footer p{
 	.menuSecundario{
 		display: none;
 	}
-	.enlaceLibro{
-		font-size: 0.7em;
-	}
 }
 
 /* Baja la caja del formulario,  */
@@ -427,24 +398,21 @@ footer p{
 	}
 	.fila2{
 		overflow: hidden;
-		margin-bottom: 1em;
+		margin-bottom: 0.3em;
 	}
 	textarea{
 		margin: 0.25em 0 1em 0;
 	}
-	.enlaceLibro{
-		font-size: 0.95em;
-		line-height: 35px;
+	.enlaceAgencias{
+		padding: 9px 0;
 	}
 }
 
-/*  Ligero ajuste en enlace Libro de Reclamaciones */
-@media screen and (max-width: 744px){
-	.bannerLibro{
-		padding: 2px;
-	}
-	.enlaceLibro{
-		line-height: 100%;
+/* Ajuste landscape iPhone 6  */
+@media screen and (max-width: 670px){
+	.enlaceAgencias{
+		font-size: 0.89em;
+		padding: 7px 0;
 	}
 }
 
@@ -452,6 +420,7 @@ footer p{
 @media screen and (max-width: 480px){
 	header{
 		min-height: 80px;
+		margin: 0 auto 12px auto;
 	}
 	.logo{
 		height: 80px;
@@ -459,6 +428,9 @@ footer p{
 	}
 	i.btnMenu{
 		padding: 16px 16px 0 16px;
+	}
+	.fila2{
+		margin-bottom: -0.1em;
 	}
 	aside{
 		width: 48%;
@@ -476,17 +448,8 @@ footer p{
 		float: left;
 		margin-right: 4%;
 	}
-	.bannerLibro{
-		width: 48%;
-		padding: 20px;
-		text-align: center;
-	}
-	.bannerLibro img{
-		width: 100%;
-		margin-bottom: 6%;
-	}
-	.enlaceLibro{
-		display: block;
+	.caja3 div:last-child{
+		margin-right: 0 !important;
 	}
 }
 
