@@ -61,7 +61,9 @@ article{
 }
 
 footer{
+	border-top: 1px solid #ddd;
 	margin: 0 auto 16px auto;
+	padding: 16px 0 0 0;
 	width: 1200px;
 }
 
@@ -177,7 +179,7 @@ nav ul li a:hover{
 	border-bottom: 1px solid #ddd;
 }
 
-.cajaPromo{
+.cajaPromociones{
 	border: 1px solid #ddd;
 	width: 49%;
 	float: left;
@@ -189,20 +191,20 @@ nav ul li a:hover{
 	/*max-height: 336px;*/
 }
 
-.cajaPromo:nth-child(2n+1){
+.cajaPromociones:nth-child(2n+1){
 	margin: 0 0 4% 0;
 }
 
-.cajaPromo a{
+.cajaPromociones a{
 	color: #0b4895;
 	text-decoration: none;
 }
 
-.cajaPromo h2{
+.cajaPromociones h2{
 	margin: 0.5em 0 !important;
 }
 
-.cajaPromo p{
+.cajaPromociones p{
 	margin: 0 !important;
 }
 
@@ -216,6 +218,17 @@ nav ul li a:hover{
 	top: 0.5em;
 	right: 0.5em;
 	border-radius: 50%
+}
+
+.cajaBeneficios{
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+
+.cajaBeneficios h3{
+	margin: 1em 0;
 }
 
 aside{
