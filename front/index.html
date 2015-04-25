@@ -35,11 +35,14 @@
 
 	<section>
 		<article class="fila2"><!-- Slider y banners cuadrados -->
+
 			<figure class="slideshow rslides_container">
 				<ul class="rslides">
-				 	<li><img src="img/banners/undiaparati.jpg" alt="Aproveche nuestros jueves dorados" border="0" /></li>
-				 	<li><img src="img/banners/4servicios.jpg" alt="4 Servicios a tu alcance" border="0" /></li>
-				  	<li><img src="img/banners/jueves-dorados.jpg" alt="Aproveche nuestros jueves dorados" border="0" /></li>
+					<li><img src="img/banners/pasos.jpg" alt="5 pasos Maxiefectivo" border="0" /></li>
+					<li><img src="img/banners/undiaparati.jpg" alt="Aproveche nuestros jueves dorados" border="0" /></li>
+					<li><img src="img/banners/4servicios.jpg" alt="4 Servicios a tu alcance" border="0" /></li>
+					<li><img src="img/banners/jueves-dorados.jpg" alt="Aproveche nuestros jueves dorados" border="0" /></li>
+				 	<li><img src="img/banners/solidez.jpg" alt="Nuestra solidez es sello de garantía comprobada" border="0" /></li>
 				</ul>
 			</figure>
 
@@ -51,24 +54,56 @@
 			</aside>
 			<aside class="caja3">
 				<div class="bannerAgencias">
-					<a href="agencias.html"><img src="img/banner-agencia.jpg" alt="Conoce nuestras agencias" border="0" /></a>
+					<a href="productos.html"><img src="img/banner-oro-home.jpg" alt="Compra de joyas de oro" border="0" /></a>
+					<a class="enlaceAgencias" href="agencias.html">Compramos joyas de oro</a>
+				</div>
+				<div class="bannerAgencias">
+					<a href="agencias.html"><img src="img/banner-agencia-home.jpg" alt="Conoce nuestras agencias" border="0" /></a>
 					<a class="enlaceAgencias" href="agencias.html">Conoce nuestras agencias</a>
 				</div>
-				<div class="bannerLibro">
-					<img src="img/libro-de-reclamaciones.jpg" alt="Libro de reclamaciones" border="0" />
-					<a class="enlaceLibro" href="libro-de-reclamaciones.html">Libro de reclamaciones</a>
-				</div>
 			</aside>
+
 		</article>
 		
 		<article class="fila1"><!-- Formulario de consultas -->
-			<h2>¡Correo enviado! Muchas gracias.</h2>
-			<p>Te confirmamos que hemos recibido tu consulta, nos pondremos en contacto contigo a la brevedad.<br /><br />Mientras tanto…</p>
-			<ul>
-				<li>¡Súmate a nuestros seguidores en <a href="https://www.facebook.com/MaxiefectivoPeru/" target="_blank">Facebook</a> y <a href="https://twitter.com/MaxiefectivoPE" target="_blank">Twitter</a>. Quédate en contacto para enterarte de las últimas promociones.</li>
-				<li>Te recordamos que nuestra central telefónica es (01) 419 8888.</li>
-				<li>Puedes visitarnos en cualquiera de nuestras 11 agencias en el país. Conoce más <a href="agencias.html">haciendo click aquí</a>.</li>
-			</ul>
+
+			<h2>Consultas en línea</h2>
+			<form action="">
+				<label class="textoForm">Nombre*</label><br />
+				<input type="text" class="campo"><br />
+				<label class="textoForm">DNI*</label><br />
+				<input type="text" class="campo"><br />
+				<label class="textoForm">Teléfono*</label><br />
+				<input type="text" class="campo"><br />
+				<label class="textoForm">Agencia más cercana</label><br />
+				<select name="agencias" class="campo">
+					<option value="">Seleccione...</option>
+                    <option value="0001">Mall Aventura Plaza Bellavista</option>
+                    <option value="0002">Psje. Olaya 113 Cercado</option>
+                    <option value="0003">Av. Gran Chimú 396 SJL</option>
+                    <option value="0004">Av. Pachacutec 2257 VMT</option>
+                    <option value="0005">Ciudad Comercial Minka</option>
+                    <option value="0006">Av. Venezuela 1265 Breña</option>
+                    <option value="0007">CC Plaza Norte</option>
+                    <option value="0008">CC Real Plaza Pro</option>
+                    <option value="0009">CC Plaza del Sol Huacho</option>
+                    <option value="0010">CC Real Plaza Trujillo</option>
+                    <option value="0011">CC Mall Aventura Plaza Trujillo</option>
+				</select><br />
+				<label class="textoForm">Tipo de servicio</label><br />
+				<select name="prestamo" class="campo">
+					<option value="">Seleccione...</option>
+                    <option value="0001">Préstamo oro</option>
+                    <option value="0002">Préstamo electro</option>
+                    <option value="0003">Compra de joyas de oro</option>
+                    <option value="0004">Custodia de joyas de oro</option>
+                    <option value="0005">Otras consultas</option>
+				</select><br />
+				<label class="textoForm">Detállanos tu consulta*</label><br />
+				<textarea name="detalles" cols="30" rows="7"></textarea><br />
+				<input type="button" class="boton" value="enviar">
+			</form>
+
 		</article>
 	</section>
 
