@@ -65,46 +65,46 @@
 
 		</article>
 		
-		<article class="fila1"><!-- Formulario de consultas -->
-
-			<h2>Consultas en línea</h2>
-			<form action="">
-				<label class="textoForm">Nombre*</label><br />
-				<input type="text" class="campo"><br />
-				<label class="textoForm">DNI*</label><br />
-				<input type="text" class="campo"><br />
-				<label class="textoForm">Teléfono*</label><br />
-				<input type="text" class="campo"><br />
-				<label class="textoForm">Agencia más cercana</label><br />
-				<select name="agencias" class="campo">
-					<option value="">Seleccione...</option>
-                    <option value="0001">Mall Aventura Plaza Bellavista</option>
-                    <option value="0002">Psje. Olaya 113 Cercado</option>
-                    <option value="0003">Av. Gran Chimú 396 SJL</option>
-                    <option value="0004">Av. Pachacutec 2257 VMT</option>
-                    <option value="0005">Ciudad Comercial Minka</option>
-                    <option value="0006">Av. Venezuela 1265 Breña</option>
-                    <option value="0007">CC Plaza Norte</option>
-                    <option value="0008">CC Real Plaza Pro</option>
-                    <option value="0009">CC Plaza del Sol Huacho</option>
-                    <option value="0010">CC Real Plaza Trujillo</option>
-                    <option value="0011">CC Mall Aventura Plaza Trujillo</option>
-				</select><br />
-				<label class="textoForm">Tipo de servicio</label><br />
-				<select name="prestamo" class="campo">
-					<option value="">Seleccione...</option>
-                    <option value="0001">Préstamo oro</option>
-                    <option value="0002">Préstamo electro</option>
-                    <option value="0003">Compra de joyas de oro</option>
-                    <option value="0004">Custodia de joyas de oro</option>
-                    <option value="0005">Otras consultas</option>
-				</select><br />
-				<label class="textoForm">Detállanos tu consulta*</label><br />
-				<textarea name="detalles" cols="30" rows="7"></textarea><br />
-				<input type="button" class="boton" value="enviar">
-			</form>
-
-		</article>
+        <article class="fila1"><!-- Formulario de consultas -->
+            <div>
+                <h2>Consultas en línea</h2>
+                <form action="">
+                    <label class="textoForm">Nombre*</label><br />
+                    <input type="text" class="campo" name="txtname" id="txtname" minlength="2"><br />
+                    <label class="textoForm">DNI*</label><br />
+                    <input name="txtdni" id="txtdni" type="text" class="campo" minlength="8" maxlength="8"><br />
+                    <label class="textoForm">Teléfono*</label><br />
+                    <input type="text" class="campo" name="txtphone" id="txtphone" minlength="7" maxlength="9"><br />
+                    <label class="textoForm">Agencia más cercana</label><br />
+                    <select name="agencias" id="agencias" class="campo">
+                        <option value="">Seleccione...</option>
+                        <option value="0001">Mall Aventura Plaza Bellavista</option>
+                        <option value="0002">Psje. Olaya 113 Cercado</option>
+                        <option value="0003">Av. Gran Chimú 396 SJL</option>
+                        <option value="0004">Av. Pachacutec 2257 VMT</option>
+                        <option value="0005">Ciudad Comercial Minka</option>
+                        <option value="0006">Av. Venezuela 1265 Breña</option>
+                        <option value="0007">CC Plaza Norte</option>
+                        <option value="0008">CC Real Plaza Pro</option>
+                        <option value="0009">CC Plaza del Sol Huacho</option>
+                        <option value="0010">CC Real Plaza Trujillo</option>
+                        <option value="0011">CC Mall Aventura Plaza Trujillo</option>
+                    </select><br />
+                    <label class="textoForm">Tipo de servicio</label><br />
+                    <select name="prestamo" class="campo" id="prestamo">
+                        <option value="">Seleccione...</option>
+                        <option value="0001">Préstamo oro</option>
+                        <option value="0002">Préstamo electro</option>
+                        <option value="0003">Compra de joyas de oro</option>
+                        <option value="0004">Custodia de joyas de oro</option>
+                        <option value="0005">Otras consultas</option>
+                    </select><br />
+                    <label class="textoForm">Detállanos tu consulta*</label><br />
+                    <textarea name="txtdetalles" id="txtdetalles" cols="30" rows="7" minlength="2"></textarea><br />
+                    <input type="button" class="boton" value="enviar">
+                </form>
+            <div>
+        </article>
 	</section>
 
 	<footer><!-- pie de página -->
@@ -121,16 +121,10 @@
 	</footer>
 	
 	<script src="js/modernizr.custom.72810.js"></script>
-	<script src="js/jquery-latest.js"></script>
-	<script src="js/menu.js"></script>
-	<script src="js/responsiveslides.js"></script>
-	<script>
-	  $(function() {
-	    $(".rslides").responsiveSlides({
-	    	auto: true,
-	        speed: 1000
-	    });
-	  });
-	</script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/responsiveslides.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
