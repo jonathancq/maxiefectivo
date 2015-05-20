@@ -30,51 +30,51 @@
 
   switch($_POST['agencias']){
     case '0001': //Bellavista
-        $email_to ="agencia001@maxiefectivo.com.pe, andree.padron@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe001@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "Mall Aventura Plaza Bellavista";
         break;
     case '0002': // olaya -- Centro de Lima
-        $email_to ="agencia005@maxiefectivo.com.pe, daniel.limaco@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe005@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "Psje. Olaya 113 Cercado";
         break;
     case '0003': // SJL
-        $email_to ="agencia009@maxiefectivo.com.pe, aracelli.zambrano@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe009@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "Av. Gran Chimú 396 SJL";
         break;
     case '0004': // VMT
-        $email_to ="agencia014@maxiefectivo.com.pe, henry.patino@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe014@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "Av. Pachacutec 2257 VMT";
         break;
     case '0005': //Minca
-        $email_to ="agencia010@maxiefectivo.com.pe, susan.villegas@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe010@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "Ciudad Comercial Minka";
         break;
     case '0006': //Breña
-        $email_to ="agencia004@maxiefectivo.com.pe, fernando.llanos@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe004@gmail.com, fcomperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "Av. Venezuela 1265 Breña";
         break;
     case '0007': // Plaza Norte
-        $email_to ="agencia003@maxiefectivo.com.pe, enrique.sarmiento@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe003@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "CC Plaza Norte";
         break;
     case '0008': // Real Plaza Pro
-        $email_to ="agencia002@maxiefectivo.com.pe, liceth.espinoza@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe002@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "CC Real Plaza Pro";
         break;
     case '0009': //Huacho
-        $email_to ="agencia015@maxiefectivo.com.pe, cesar.pacheres@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe015@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "CC Plaza del Sol Huacho";
         break;
     case '0010': // Tujillo
-        $email_to ="agencia007@maxiefectivo.com.pe, jarumy.utrilla@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe007@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "CC Real Plaza Trujillo";
         break;
     case '0011': //Mall Trujillo
-        $email_to ="agencia008@maxiefectivo.com.pe, luis.casas@maxiefectivo.com.pe, social@maxiefectivo.com.pe";
+        $email_to ="agenciamxe008@gmail.com, comperumxe@gmail.com, jonathancq@gmail.com";
         $agencia = "CC Mall Aventura Plaza Trujillo";
         break;
     default:
-        $email_to ="social@maxiefectivo.com.pe";
+        $email_to ="jonathancq@gmail.com";
         $agencia = "";
   }
 
