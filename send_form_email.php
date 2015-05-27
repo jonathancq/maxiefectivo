@@ -15,7 +15,7 @@
     return false;
   }
 
-  $email_from = 'noreply@maxiefectivo.com.pe'; // required
+  $email_from = 'admin@maxiefectivo.com.pe'; // required
   $first_name = $_POST['txtname']; // required
   $dni = $_POST['txtdni']; // required
   $phone = $_POST['txtphone']; // required
@@ -74,7 +74,7 @@
         $agencia = "CC Mall Aventura Plaza Trujillo";
         break;
     default:
-        $email_to ="jonathancq@gmail.com";
+        $email_to ="social@maxiefectivo.com.pe, alvimer2708@gmail.com, jonathancq@gmail.com";
         $agencia = "";
   }
 
@@ -137,7 +137,7 @@
   $headers .= 'From: ' . $email_from . "\r\n" .
   'Reply-To: ' . $email_from . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
-  @mail($email_to, $email_subject, $email_message, $headers);  
+  mail($email_to, $email_subject, $email_message, $headers);
 
   $data['error'] = true;
   echo json_encode($data);
