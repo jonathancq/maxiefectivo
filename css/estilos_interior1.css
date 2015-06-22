@@ -131,6 +131,10 @@ nav ul li a:hover{
 	border-right: 1em solid white;
 }
 
+.cabeceraGrande{
+	/*border: 1px solid red;*/
+}
+
 .columna2Banners{
 	width: 25%;
 }
