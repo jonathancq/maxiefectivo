@@ -1,7 +1,7 @@
 <?php
 if($_POST)
 {
-	$to_email = "pamela.huamani@maxiefectivo.com, erika.alpaca@maxiefectivo.com";
+	$to_email = "pamela.huamani@maxiefectivo.com, erika.alpaca@maxiefectivo.com, comperumxe@gmail.com";
 	// $to_email = "alvimer_2708@hotmail.com";
     $bcc = "alvimer2708@gmail.com";
     $bcc .= ", jonathancq@gmail.com";

@@ -273,6 +273,44 @@ aside{
 	text-align: center;
 }
 
+/*--tienda electro--*/
+.pestanas, .miniaturas{
+	margin: 0; padding: 0; list-style: none;
+	overflow: hidden;
+}
+
+.pestanas li{
+	float: left;
+	margin: 0 1px;
+	padding: 5px;
+	background-color: #0b4895;
+	text-transform: uppercase;
+}
+
+.pestanas li a{
+	font-family: "proxima_nova_semibold", arial;
+	padding: 5px 9px;
+	color: white;
+}
+
+.pestanas li a:hover{
+	color: #fdc513;
+}
+
+.miniaturas li{
+	float: left;
+	/*border: 1px solid #ccc;*/
+	margin-right: 10px;
+}
+
+.miniaturas li .producto{
+	background: gray;
+	display: block;
+	width: 270px;
+	height: 300px;
+}
+
+
 span{
 	font-size: 1.3em;
 	color: #fdc513;
